@@ -1,0 +1,342 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*
+* Заголовок
+*/
+
+.header {
+    background-image: url(img/top.png);
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: inline-block;
+    font: 20pt tahoma;
+    margin-left: 50px;
+    margin-top: 18px;
+    color: white;
+    height: 60px;
+}
+
+span.title::first-letter {
+    background: white;
+    color: #1a6a6d;
+    padding: 2px 4px;
+    margin: 2px;
+    border-radius: 6px;
+}
+
+
+/*
+* Верхнее меню
+*/
+
+.menu-top {
+    font: 16pt arial;
+    margin-right: 50px;
+    display: flex;
+}
+
+
+.menu-top a {
+    display: inline-block;
+    color: white;
+    height: 50px;
+    padding: 20px 25px 0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.submenu1 {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+
+}
+
+.menu-item:hover>.submenu1 {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(22, 241, 212);
+    outline: 2px solid black;
+    margin-left: 27px;
+}
+
+.submenu1 li {
+    width: 150px;
+    height: 40px;
+}
+
+.submenu1 a {
+    color: #000;
+}
+
+.submenu1 .item3{
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  outline: 1px solid black;
+}
+
+.item3 a {
+    padding: 0;
+}
+.submenu2 {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+}
+.item3:last-child:hover .submenu2 {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    background-color: rgb(22, 241, 212);
+    outline: 2px solid black;
+    margin-top: -54px;
+    margin-left: 207px;
+}
+
+
+
+/*
+* Левое меню
+*/
+
+.sidebar-left {
+    float: left;
+    font: 16pt arial;
+    width: 220px;
+    padding: 0px;
+    margin-left: 40px;
+}
+
+.menu-left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.menu-left a {
+    display: inline-block;
+    color: #5e7a6f;
+    padding: 8px;
+    width: 204px;
+}
+
+.menu-left li:hover {
+background-color: rgb(235, 225, 225);
+}
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+}
+.item:hover>.submenu {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+    background-color: white;
+    margin-left: 220px;
+    margin-top: -39px;
+    outline: 2px solid black;
+}
+.submenu li a {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+.submenu li {
+    height: 40px;
+}
+.submenu li:not(:first-child) {
+    padding-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main {
+    width: 900px;
+    background-image: url(img/fon.png);
+    background-repeat: repeat-y;
+    margin-left: 260px;
+}
+
+.online {
+    background-color: #dedede;
+    padding: 5px;
+
+}
+
+.nick {
+    display: inline-block;
+    font: 16pt tahoma;
+    color: #1a6a6d;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+/*
+* Аватарка
+*/
+
+.lenta-left {
+    float: left;
+}
+
+.avatar {
+    width: 280px;
+    margin: 10px;
+}
+
+.lenta-right {
+    margin-left: 300px;
+
+}
+
+.about {
+    display: flex;
+}
+
+.info-left {
+    width: 200px;
+}
+
+.info-right {
+    color: #1a6a6d;
+    margin-right: 80px;
+}
+
+p {
+    font: 14pt arial;
+}
+
+.edit-page {
+    margin-left: 20px;
+    color: #1a6a6d;
+}
+
+.top-menu {
+    display: inline-block;
+    background-color: #dedede;
+    width: 100%;
+}
+
+/*
+* Галееря
+*/
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    margin: 3px;
+}
+
+/*
+* Футер
+*/
+
+
+.footer {
+    background-color: #dedede;
+    padding: 1px;
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+/*
+* Музыка и Видео
+*/
+.music1 {
+    padding: 10px;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+    background-color: rgb(136, 93, 179);
+    font: 10pt tahoma;
+}
+
+.buttons {
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.favoriteMusic {
+    display: inline-block;
+    background-color: #dedede;
+    width: 100%;
+}
+
+.favoriteMusic span {
+    display: inline-block;
+    font: 16pt tahoma;
+    color: #1a6a6d;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.favoritevideo {
+    display: inline-block;
+    background-color: #dedede;
+    width: 100%;
+}
+.favoritevideo span {
+    display: inline-block;
+    font: 16pt tahoma;
+    color: #1a6a6d;
+    padding: 3px;
+    margin-left: 10px;
+}
+ 
+video {
+    width: 600px;
+}
+.buttons2{
+    padding: 3px;
+}
